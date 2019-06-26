@@ -6,23 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Star Wars: The RPG</title>
 
-    <!-- CSS Link -->
-    <script src="assets/css/style.css"></script>
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <!-- JQuery Link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
 
     <!-- Header With title -->
-    <header id=header style="text-align: center">Star Wars RPG!</header>
+    <div id=header class=jumbotron style="text-align: center">Star Wars RPG!</div>
+    <br>
 
     <!-- Character Selection -->
-    <div class=container>
-        <button>Obi-Wan Kenobi</button>
-        <button>Luke Skywalker</button>
-        <button>Darth Sidious</button>
-        <button>Darth Maul</button>
-    </div>
+    <!-- <div class=jumbotron style="text-align: center">
+        <img id="img" onClick="char1()" style="background: url(assets/images/obi-wan.jpg)">Obi-Wan Kenobi</img>
+        <img id="img" onClick="char2()" style="background: url(assets/images/luke-skywalker.jpg)">Luke Skywalker</img>
+        <img id="img" onClick="char3()" style="background: url(assets/images/darth-sidious.jpg)">Darth Sidious</img>
+        <img id="img" onClick="char4()" style="background: url(assets/images/darth-maul.jpg)">Darth Maul</img>
+    </div> -->
+
+    <div id=body-1 class=jumbotron style="text-align: center">
+            <button id="img" class="btn btn-default" onClick="char1()"></button><img src="https://lumiere-a.akamaihd.net/v1/images/Obi-Wan-Kenobi_6d775533.jpeg?region=0%2C0%2C1536%2C864&width=960"/>Obi-Wan Kenobi</button>
+            <button id="img" class="btn btn-default" onClick="char2()"><img src="https://lumiere-a.akamaihd.net/v1/images/Obi-Wan-Kenobi_6d775533.jpeg?region=0%2C0%2C1536%2C864&width=960"/>Luke Skywalker</button>
+            <button id="img" class="btn btn-default" onClick="char3()"><img src="https://lumiere-a.akamaihd.net/v1/images/Obi-Wan-Kenobi_6d775533.jpeg?region=0%2C0%2C1536%2C864&width=960"/>Darth Sidious</button>
+            <button id="img" class="btn btn-default" onClick="char4()"><img src="https://lumiere-a.akamaihd.net/v1/images/Obi-Wan-Kenobi_6d775533.jpeg?region=0%2C0%2C1536%2C864&width=960"/>Darth Maul</button>
+        </div>
 
     <!-- Your Character Location -->
     <!-- Will Only be Shown After Character is Chosen -->
@@ -34,6 +45,10 @@
     <!-- Fight Section -->
 
     <!-- Defender -->
+
+
+    <!-- JavaScript -->
+    <script src="assets/javascript/game.js"></script>
 
 </body>
 </html>
