@@ -2,53 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Star Wars: The RPG</title>
 
     <!-- CSS Links -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
+
     <!-- JQuery Link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
+
 <body>
 
-    <!-- Header With title -->
-    <div id=header class=jumbotron style="text-align: center">Star Wars RPG!</div>
-    <br>
+<!-- Overall Bootstrap grid -->
+<div class="container">
 
-    <!-- Character Selection -->
-    <!-- <div class=jumbotron style="text-align: center">
-        <img id="img" onClick="char1()" style="background: url(assets/images/obi-wan.jpg)">Obi-Wan Kenobi</img>
-        <img id="img" onClick="char2()" style="background: url(assets/images/luke-skywalker.jpg)">Luke Skywalker</img>
-        <img id="img" onClick="char3()" style="background: url(assets/images/darth-sidious.jpg)">Darth Sidious</img>
-        <img id="img" onClick="char4()" style="background: url(assets/images/darth-maul.jpg)">Darth Maul</img>
-    </div> -->
+    <!-- Jumbotron with title -->
+    <div class="jumbotron">
 
-    <div id=body-1 class=jumbotron style="text-align: center">
-            <button id="img" class="btn btn-default" onClick="char1()"></button><img src="https://lumiere-a.akamaihd.net/v1/images/Obi-Wan-Kenobi_6d775533.jpeg?region=0%2C0%2C1536%2C864&width=960"/>Obi-Wan Kenobi</button>
-            <button id="img" class="btn btn-default" onClick="char2()"><img src="https://lumiere-a.akamaihd.net/v1/images/Obi-Wan-Kenobi_6d775533.jpeg?region=0%2C0%2C1536%2C864&width=960"/>Luke Skywalker</button>
-            <button id="img" class="btn btn-default" onClick="char3()"><img src="https://lumiere-a.akamaihd.net/v1/images/Obi-Wan-Kenobi_6d775533.jpeg?region=0%2C0%2C1536%2C864&width=960"/>Darth Sidious</button>
-            <button id="img" class="btn btn-default" onClick="char4()"><img src="https://lumiere-a.akamaihd.net/v1/images/Obi-Wan-Kenobi_6d775533.jpeg?region=0%2C0%2C1536%2C864&width=960"/>Darth Maul</button>
-        </div>
+        <h1 class="text-center"><strong>Welcome To Star Wars RPG</strong></h1>
+        <h2 class="text-center">Choose Your Character</h2>
 
-    <!-- Your Character Location -->
-    <!-- Will Only be Shown After Character is Chosen -->
+    </div> <!-- End Jumbotron -->
+
+    <!-- Contents of the game-->
+    <div class="row">
+
+        <!-- Available characters -->
+        <div class="col-lg-12" id="characters-available">
+        <span class="character-image available-character" id="obi-wan-kenobi-character">
+            <p>Obi-Wan Kenobi</p>
+            <img src="./assets/images/obi-wan.jpg" alt="Obi-Wan Kenobi Character" id="obi-wan-kenobi-image" style="width: 200px">
+            <p class="health">120</p>
+        </span>
+
+        <span class="character-image available-character" id="luke-skywalker-character">
+            <p>Luke Skywalker</p>
+            <img src="./assets/images/luke-skywalker.jpg" alt="Luke Skywalker Character" id="luke-skywalker-image" style="width: 200px">
+            <p class="health">100</p>
+        </span>
+
+        <span class="character-image available-character" id="darth-sidious-character">
+            <p>Darth Sidious</p>
+            <img src="./assets/images/darth-sidious.jpg" alt="Darth Sidious Character" id="darth-sidious-image" style="width: 200px; height: 100px">
+            <p class="health">150</p>
+        </span>
+
+        <span class="character-image available-character" id="darth-maul-character">
+            <p>Darth Maul</p>
+            <img src="./assets/images/darth-maul.jpg" alt="Darth Maul Character" id="darth-maul-image" style="width: 200px">
+            <p class="health">180</p>
+        </span>
+        </div> <!-- End available characters -->
+
+        <!-- Your chosen character -->
+        <div class="col-lg-12" id="chosen-character">
+        <h2>Your Character</h2>
+        </div> <!-- End your chosen character-->
+
+        <!-- Enemies available to attack -->
+        <div class="col-lg-12" id="enemies-available">
+        <h2>Enemies Available To Attack</h2>
+        </div> <!-- End enemies available to attack -->
+
+        <!-- Fight section -->
+        <div class="col-lg-12" id="fight-section">
+        <h2>Fight Section</h2>
+        <button id="attack">Attack</button>
+        </div> <!-- End fight section -->
+
+        <!-- Defender section -->
+        <div class="col-lg-12" id="defender-section">
+        <h2>Defender</h2>
+        </div> <!-- End defender section -->
+
+        <!-- Game message section -->
+        <div class="col-lg-12" id="message-section">
+        <div id="game-message"></div>
+        <button id="restart">Restart</button>
+        </div> <!-- Game message section -->
+
+    </div> <!-- End contents of the game -->
+
+    </div> <!-- End Bootstrap grid -->
 
 
-    <!-- Enemies Availiable to Attack -->
-    <!-- Will Display All Other Characters After User has Chosen -->
-
-    <!-- Fight Section -->
-
-    <!-- Defender -->
-
-
-    <!-- JavaScript -->
-    <script src="assets/javascript/game.js"></script>
+<script src="assets/javascript/game.js"></script>
 
 </body>
 </html>
