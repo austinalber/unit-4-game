@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cowboys: The RPG</title>
+    <title>Star Wars: The RPG</title>
 
     <!-- CSS Links -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -16,8 +16,50 @@
 
 <body>
 
+<!-- Main Body -->
+<div class="container">
+
+    <!-- Jumbotron Header -->
+    <div class="jumbotron" style="background-color: black; color: white">
+        <h1 class="text-center">Star Wars: The RPG</h1>
+        <h3 class="text-center" id="start-prompt">Choose Your Character!</h3>
+    </div>
+
+    <!-- Character Selection -->
+    <div class="col-md-12">
+        <div class="row" id="selection-div">
+            <!-- Character Selection Images Appear Here -->
+            <p>Choose Your Character!</p>
+        </div>
+        <div class="row" id="user-div">
+            <!-- User's Character Appears Here After Selected -->
+            <p>Your Character:</p>
+        </div>
+        <div class="row" id="enemy-div">
+            <!-- Enemy Character's Will Appear Here -->
+            <p>Enemies Available To Attack:</p>
+        </div>
+        <div class="row" id="fight-div">
+            <!-- Selected Character to Fight -->
+            <p>Fight Selection:</p>
+        </div>
+        <div class="row">
+            <!-- Button For Attacking -->
+            <button class="btn btn-primary" id="attack-button">Attack</button>
+        </div>
+        <div class="row" id="defender-div">
+            <!-- Defender's Location when Fighting -->
+            <p>Defender:</p>
+        </div>
+        
+    </div>
 
 
+
+<!-- Close Main Body -->
+</div>
+
+<!-- JavaScript -->
 <script src="assets/javascript/game.js"></script>
 
 </body>
