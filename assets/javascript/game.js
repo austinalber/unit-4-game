@@ -86,6 +86,7 @@ function resetGame() {
 
   $("#game-message").empty();
   $("#restart").hide();
+  $("#victory-gif").hide();
 
   characterSelected = false;
   defenderSelected = false;
@@ -278,6 +279,7 @@ $(document).ready(function() {
           gameOver = true;
           $("#game-message").html("<p>You have won the game!!!</p><p>Play again?</p>");
           $("#restart").show();
+          $("#victory-gif").show();
         }
       }
     } else if (!characterSelected && !gameOver) {
