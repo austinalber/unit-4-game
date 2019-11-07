@@ -10,6 +10,9 @@
     <!-- JQuery Link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <!-- JavaScript -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -22,7 +25,7 @@
     <!-- Jumbotron Header -->
     <div class="jumbotron" style="background-color: black; color: white">
         <h1 class="text-center">Star Wars: The RPG</h1>
-        <h3 class="text-center" id="start-prompt">Choose Your Character!</h3>
+        <h3 class="text-center" id="action-prompt">Choose Your Character!</h3>
     </div>
 
     <!-- Character Selection -->
@@ -48,8 +51,12 @@
             <button class="btn btn-primary" id="attack-button">Attack</button>
         </div>
         <div class="row" id="defender-div">
-            <!-- Defender's Location when Fighting -->
+            <!-- Defender's Location When Fighting -->
             <p>Defender:</p>
+        </div>
+
+        <div id="message">
+            <!-- Messages Appear Here -->
         </div>
         
     </div>
@@ -58,9 +65,6 @@
 
 <!-- Close Main Body -->
 </div>
-
-<!-- JavaScript -->
-<script src="assets/javascript/game.js"></script>
 
 </body>
 </html>
